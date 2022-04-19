@@ -2,7 +2,7 @@ package Work2;
 
 public class HomeWorkTwo {
     public static void main(String[] args) {
-        System.out.println(methodBoolean (12, 12)); //methodBoolean(10, 11); //первое задане
+        System.out.println(methodBoolean(12, 12)); //methodBoolean(10, 11); //первое задане
 
         positiveOrNegative(0); //второе задание
 
@@ -10,7 +10,7 @@ public class HomeWorkTwo {
 
         stringAndInt("Спасите, помогите, сложно", 6); //четвертое задание
 
-        yearLeap(); //пятое задание
+        yearLeap(); //пятое задание в процессе
 
 
     }
