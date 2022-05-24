@@ -1,19 +1,22 @@
 package Work8;
 
-public class Wall extends Obstacle {
+public class Wall implements Barrier {
 
-    int heightOfWall;
+    private final int wallHeight;
 
-    public Wall(int heightOfWall) {
-        this.heightOfWall = heightOfWall;
-
+    public Wall(int wallHeight) {
+        this.wallHeight = wallHeight;
     }
 
     @Override
-    public void throughObstacle() {
-
-
+    public boolean doWork(Player players) {
+        String name = players.toString();
+        if (players.jump(wallHeight)) {
+            System.out.println(name + " смог перепрыгнуть стену высотой " + wallHeight + " метров");
+            return true;
+        } else {
+            System.out.println(name + " не смог перепрыгнуть стену высотой " + wallHeight + " метров");
+            return false;
+        }
     }
-
-
 }

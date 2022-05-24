@@ -1,9 +1,9 @@
 package Work8;
 
-public class Robot implements Participant {
+public class Robot implements Player {
 
-    int distRun;
-    int distJump;
+    private final int distRun;
+    private final int distJump;
 
     public Robot(int distRun, int distJump) {
         this.distRun = distRun;
@@ -11,30 +11,27 @@ public class Robot implements Participant {
     }
 
     @Override
-    public void run() {
-        if (distRun <= MAX_ROBOT_RUN) {
-            System.out.println("Робот бежит " + distRun + " метров");
-        } else if (distRun > MAX_ROBOT_RUN && distRun <= 0) {
-            System.out.println("Роботу не под силу эта дистанция");
-        }
-
+    public boolean jump(int wallHeight) {
+        if (distJump <= wallHeight) {
+            return true;
+        } else if (distJump == 0) {
+            return false;
+        } else
+            return false;
     }
 
     @Override
-    public void jump() {
-        if (distRun <= MAX_ROBOT_JUMP) {
-            System.out.println("Робот прыгает " + distRun + " метров");
-        } else if (distRun > MAX_ROBOT_JUMP && distRun <= 0) {
-            System.out.println("Роботу не под силу эта дистанция");
-        }
-    }
-
-    public void printInfo() {
-        System.out.println(this);
+    public boolean run(int trackDist) {
+        if (distJump <= trackDist) {
+            return true;
+        } else if (trackDist == 0) {
+            return false;
+        } else
+            return false;
     }
 
     @Override
     public String toString() {
-        return "Робот собирается пробежать " + distRun + " м. и прыгнуть на " + distJump + " м. через стену";
+        return "Робот";
     }
 }

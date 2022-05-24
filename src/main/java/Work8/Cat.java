@@ -1,41 +1,46 @@
 package Work8;
 
-public class Cat implements Participant {
+public class Cat implements Player {
 
-    int distRun;
-    int distJump;
+    private final int distRun;
 
+    private final int distJump;
 
     public Cat(int distRun, int distJump) {
         this.distRun = distRun;
         this.distJump = distJump;
     }
 
-    @Override
-    public void run() {
-        if (distRun <= MAX_CAT_RUN) {
-            System.out.println("Кот бежит " + distRun + " метров");
-        } else if (distRun > MAX_CAT_RUN && distRun <= 0) {
-            System.out.println("Коту не под силу эта дистанция");
-        }
+    public int getDistRun() {
+        return distRun;
+    }
 
+    public int getDistJump() {
+        return distJump;
     }
 
     @Override
-    public void jump() {
-        if (distRun <= MAX_CAT_JUMP) {
-            System.out.println("Кот прыгает " + distRun + " метров");
-        } else if (distRun > MAX_CAT_JUMP && distRun <= 0) {
-            System.out.println("Коту не под силу эта дистанция");
-        }
+    public boolean jump(int wallHeight) {
+        if (distJump <= wallHeight) {
+            return true;
+        } else if (distJump == 0) {
+            return false;
+        } else
+            return false;
     }
 
-    public void printInfo() {
-        System.out.println(this);
+    @Override
+    public boolean run(int trackDist) {
+        if (distJump <= trackDist) {
+            return true;
+        } else if (trackDist == 0) {
+            return false;
+        } else
+            return false;
     }
 
     @Override
     public String toString() {
-        return "Кот собирается пробежать " + distRun + " м. и прыгнуть на " + distJump + " м. через стену";
+        return "Кот";
     }
 }
