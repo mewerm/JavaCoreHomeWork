@@ -11,17 +11,9 @@ public class Cat implements Player {
         this.distJump = distJump;
     }
 
-    public int getDistRun() {
-        return distRun;
-    }
-
-    public int getDistJump() {
-        return distJump;
-    }
-
     @Override
     public boolean jump(int wallHeight) {
-        if (distJump <= wallHeight) {
+        if (distJump >= wallHeight) {
             return true;
         } else if (distJump == 0) {
             return false;
@@ -31,7 +23,7 @@ public class Cat implements Player {
 
     @Override
     public boolean run(int trackDist) {
-        if (distJump <= trackDist) {
+        if (distJump >= trackDist) {
             return true;
         } else if (trackDist == 0) {
             return false;

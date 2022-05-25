@@ -6,7 +6,7 @@ public class Main {
         Cat cat = new Cat(20, 5);
         Human human = new Human(350, 1);
         Robot robot = new Robot(15, 2);
-        Wall wall = new Wall(3);
+        Wall wall = new Wall(1);
         Track track = new Track(150);
 
         Player[] players = {cat, human, robot};

@@ -12,7 +12,7 @@ public class Robot implements Player {
 
     @Override
     public boolean jump(int wallHeight) {
-        if (distJump <= wallHeight) {
+        if (distJump >= wallHeight) {
             return true;
         } else if (distJump == 0) {
             return false;
@@ -22,7 +22,7 @@ public class Robot implements Player {
 
     @Override
     public boolean run(int trackDist) {
-        if (distJump <= trackDist) {
+        if (distJump >= trackDist) {
             return true;
         } else if (trackDist == 0) {
             return false;
