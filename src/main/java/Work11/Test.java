@@ -50,17 +50,17 @@ public class Test {
 
     protected static void testBook() {
         PhoneBook phoneBook = new PhoneBook();
-        phoneBook.add("Иванов", 89290982365L);
-        phoneBook.add("Иванов", 89298765487L);
-        phoneBook.add("Петров", 892978788237L);
-        phoneBook.add("Петров", 892978788237L);
-        phoneBook.add("Петров", 892978777237L);
-        phoneBook.add("Сидоров", 89298888888L);
-        phoneBook.add("Сидоров", 89298888888L);
-        phoneBook.add("Петров", 8929777777L);
-        phoneBook.add("Водочкин", 8929765439765L);
-        phoneBook.add("Водочкин", 8929765438765L);
-        phoneBook.add("Сидоров", 89896888582L);
+        phoneBook.add("Иванов", "+79290982365");
+        phoneBook.add("Иванов", "+79298765487");
+        phoneBook.add("Петров", "+792978788237");
+        phoneBook.add("Петров", "+792978788237");
+        phoneBook.add("Петров", "+792978777237");
+        phoneBook.add("Сидоров", "+79298888888");
+        phoneBook.add("Сидоров", "+79298888888");
+        phoneBook.add("Петров", "+7929777777");
+        phoneBook.add("Водочкин", "+7929765439765");
+        phoneBook.add("Водочкин", "+7929765438765");
+        phoneBook.add("Сидоров", "+79896888582");
 
         System.out.println(phoneBook.get("Петров"));
         System.out.println(phoneBook.get("Иванов"));

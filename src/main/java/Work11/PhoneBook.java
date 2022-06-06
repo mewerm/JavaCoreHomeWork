@@ -7,14 +7,14 @@ import java.util.Set;
 
 public class PhoneBook {
 
-    private Map<String, HashSet<Long>> map;
+    private Map<String, HashSet<String>> map;
 
     protected PhoneBook() {
         this.map = new HashMap<>();
     }
 
-    protected void add(String lastName, long phoneNumber) {
-        HashSet<Long> numbers;
+    protected void add(String lastName, String phoneNumber) {
+        HashSet<String> numbers;
 
         if (map.containsKey(lastName)) {
             numbers = map.get(lastName);
@@ -25,7 +25,7 @@ public class PhoneBook {
         map.put(lastName, numbers);
     }
 
-    Set<Long> get(String lastName) {
+    Set<String> get(String lastName) {
         System.out.printf("Все возможные номера товарища %sа", lastName);
         return map.get(lastName);
     }
