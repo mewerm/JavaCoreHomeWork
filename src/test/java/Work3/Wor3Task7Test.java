@@ -29,7 +29,8 @@ class Wor3Task7Test {
         Assertions.assertArrayEquals(forSevenArray, forSevenArray2);
     }
 
-    @DisplayName("Тест массива ") // я понимаю, что нужно проверить на фолс, что нет места где сумма ячеек равна, а как это реализовать не знаю каким assert не понятно.
+    @DisplayName("Тест массива ")
+    // я понимаю, что нужно проверить на фолс, что нет места где сумма ячеек равна, а как это реализовать не знаю каким assert не понятно.
     @Test
     void testArray2() {
         int[] forSevenArray = {777, 543, 32, 543, 32, 777};
@@ -39,3 +40,4 @@ class Wor3Task7Test {
         });
 
     }
+}

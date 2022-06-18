@@ -11,7 +11,6 @@ public class Main {
             int runMethod = arraysHelper.doArrays(fourFourArray);
             System.out.println(runMethod);
 
-
         } catch (MySizeArrayException e) {
             e.printStackTrace();
             System.err.println("Количество массивов превышено - максимум 4 ");

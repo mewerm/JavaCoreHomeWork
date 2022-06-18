@@ -2,8 +2,6 @@ package Work3;
 
 public class Work3Task7 extends MainForSevenTask {
 
-
-
     public boolean checkBalance(int[] array) {
 
         int leftSum = 0;

@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class MainForSevenTask {
 
-
     public static void main(String[] args) {
         Work3Task7 task7 = new Work3Task7();
 

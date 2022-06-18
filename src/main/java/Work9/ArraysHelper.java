@@ -23,7 +23,7 @@ public class ArraysHelper {
                 }
             }
         }
-        System.out.print("Сумма чисел двумерного массива равна: ");
+        System.out.print("Сумма чисел двумерного массива равна : ");
         return sum;
     }
 }
