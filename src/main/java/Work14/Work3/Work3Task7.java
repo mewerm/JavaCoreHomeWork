@@ -1,4 +1,4 @@
-package Work3;
+package Work14.Work3;
 
 public class Work3Task7 extends MainForSevenTask {
 

@@ -1,9 +1,7 @@
-package Work3;
+package Work14.Work3;
 
+import Work14.Work3.Work3Task7;
 import org.junit.jupiter.api.*;
-
-import java.time.Duration;
-import java.util.Arrays;
 
 class Wor3Task7Test {
     private Work3Task7 task7;
@@ -29,9 +27,9 @@ class Wor3Task7Test {
         Assertions.assertArrayEquals(forSevenArray, forSevenArray2);
     }
 
-    @DisplayName("Тест массива ")
+  /*  @DisplayName("Тест массива ")
     // я понимаю, что нужно проверить на фолс, что нет места где сумма ячеек равна, а как это реализовать не знаю каким assert не понятно.
-    @Test
+*//*    @Test
     void testArray2() {
         int[] forSevenArray = {777, 543, 32, 543, 32, 777};
         Assertions.assertTrue(true, () -> {
@@ -39,5 +37,5 @@ class Wor3Task7Test {
             task7.checkBalance(forSevenArray2);
         });
 
-    }
+    }*/
 }

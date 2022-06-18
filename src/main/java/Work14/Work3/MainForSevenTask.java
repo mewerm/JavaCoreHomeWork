@@ -1,6 +1,4 @@
-package Work3;
-
-import java.util.Arrays;
+package Work14.Work3;
 
 public class MainForSevenTask {
 
